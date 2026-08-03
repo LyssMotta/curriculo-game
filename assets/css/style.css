@@ -130,8 +130,7 @@ nav a:hover{
 
 }
 
-/* ==========================
-   BANNER PRINCIPAL
+/* ==========BANNER PRINCIPAL==========
 ========================== */
 
 .banner {
@@ -293,8 +292,7 @@ nav a:hover{
 
 }
 
-/* ==========================
-   RESPONSIVIDADE DO BANNER
+/* ======RESPONSIVIDADE DO BANNER===========
 ========================== */
 
 @media (max-width: 768px) {
@@ -333,8 +331,8 @@ nav a:hover{
 
 }
 
-/* ==========================
-   SOBRE MIM
+/* ======SOBRE MIM=============
+   
 ========================== */
 
      .sobre {
@@ -426,8 +424,7 @@ nav a:hover{
 
 }
 
-/* ==========================
-   CARDS SOBRE MIM
+/* ========CARDS SOBRE MIM==========
 ========================== */
 
 .informacoes {
@@ -494,8 +491,7 @@ nav a:hover{
 
 }
 
-/* ==========================
-   HABILIDADES
+/* ======= HABILIDADES==========
 ========================== */
 
 .habilidades {
@@ -614,8 +610,7 @@ nav a:hover{
 
 }
 
-/* ==========================
-   FORMAÇÃO
+/* =========FORMAÇÃO============
 ========================== */
 
 .formacao {
@@ -706,8 +701,7 @@ nav a:hover{
 
 }
 
-/* ==========================
-   RESPONSIVIDADE FORMAÇÃO
+/* =====RESPONSIVIDADE FORMAÇÃO============
 ========================== */
 
 @media (max-width: 768px) {
@@ -756,6 +750,212 @@ nav a:hover{
 
         font-size: 15px;
 
+    }
+
+}
+
+/* =====EXPERIÊNCIA PROFISSIONAL==========
+========================= */
+
+.experiencia {
+    padding: 80px 10%;
+}
+
+.experiencia h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: var(--cor-primaria);
+}
+
+/* Linha do tempo */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+/* Linha vertical */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--cor-primaria);
+    border-radius: 10px;
+}
+
+/* Cada item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* Bolinha */
+.timeline-dot {
+    position: absolute;
+    left: -34px;
+    top: 18px;
+
+    width: 20px;
+    height: 20px;
+
+    background: var(--cor-primaria);
+    border: 4px solid #fff;
+    border-radius: 50%;
+
+    box-shadow: 0 0 12px rgba(0,0,0,.25);
+}
+
+/* Caixa */
+.timeline-content {
+    background: #fff;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+    transition: .3s;
+}
+
+/* Hover */
+.timeline-content:hover{
+    transform: translateY(-6px);
+}
+
+/* Período */
+.periodo{
+    display:inline-block;
+
+    margin-bottom:10px;
+
+    color: var(--cor-primaria);
+
+    font-weight:bold;
+}
+
+/* Cargo */
+.timeline-content h3{
+
+    margin-bottom:8px;
+
+    color:#222;
+}
+
+/* Empresa */
+.timeline-content h4{
+
+    margin-bottom:15px;
+
+    color:#666;
+
+    font-weight:500;
+}
+
+/* Lista */
+.timeline-content ul{
+
+    padding-left:20px;
+}
+
+.timeline-content li{
+
+    margin-bottom:10px;
+
+    color:#555;
+
+    line-height:1.6;
+}
+
+/* ========== MELHORIAS DA TIMELINE========
+========================= */
+
+/* Barra colorida lateral */
+.timeline-content{
+    border-left: 6px solid var(--cor-primaria);
+}
+
+/* Sombra mais moderna */
+.timeline-content:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 35px rgba(0,0,0,.15);
+}
+
+/* Títulos */
+.timeline-content h3{
+
+    font-size: 1.4rem;
+}
+
+.timeline-content h4{
+
+    font-size: 1rem;
+}
+
+/* Lista */
+.timeline-content li{
+
+    transition: .3s;
+}
+
+/* Destaca o item da lista */
+.timeline-content li:hover{
+
+    color: var(--cor-primaria);
+
+    transform: translateX(5px);
+}
+
+/* Espaçamento do último item */
+.timeline-item:last-child{
+
+    margin-bottom:0;
+}
+
+/* ====== RESPONSIVIDADE============
+========================= */
+
+@media (max-width:768px){
+
+    .experiencia{
+
+        padding:60px 8%;
+    }
+
+    .timeline{
+
+        padding-left:30px;
+    }
+
+    .timeline::before{
+
+        left:10px;
+    }
+
+    .timeline-dot{
+
+        left:-28px;
+
+        width:18px;
+
+        height:18px;
+    }
+
+    .timeline-content{
+
+        padding:20px;
+    }
+
+    .timeline-content h3{
+
+        font-size:1.2rem;
     }
 
 }
