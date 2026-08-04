@@ -12,13 +12,14 @@ body{
 
     font-family:Arial, Helvetica, sans-serif;
 
-    background:#0f172a;
+    background:#ccccf1;
 
 }
 
 /* HEADER */
 
 header{
+
 
     background:#111827;
 
@@ -40,7 +41,11 @@ header{
 
     left:0;
 
+    z-index:1000;
+
     box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+
 
 }
 
@@ -134,7 +139,9 @@ nav a:hover{
 ========================== */
 
 .banner {
-    min-height: 90vh;
+
+    min-height:100vh;
+    padding-top:100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1224,7 +1231,7 @@ nav a:hover{
 
 .descricao-jogo{
 
-    color:#666;
+    color:#f8f7f7;
 
     margin-bottom:40px;
 }
@@ -1344,7 +1351,7 @@ nav a:hover{
 
     transform:translateY(-3px);
 
-    background:#444;
+    background:#ffffff;
 }
 
 /* Informações */
@@ -1564,3 +1571,250 @@ nav a:hover{
     }
 
 }
+
+/* =========================
+   CONTATO
+========================= */
+
+
+.contato {
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+
+
+.contato h2 {
+
+    font-size:32px;
+
+}
+
+
+
+.contato p {
+
+    margin:20px;
+
+}
+
+
+
+.botao-contato {
+
+
+    display:inline-block;
+
+
+    padding:12px 30px;
+
+
+    background:#2563eb;
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+    border-radius:25px;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+.botao-contato:hover {
+
+
+    transform:scale(1.05);
+
+
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+
+.rodape {
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#111827;
+
+    color:rgb(248, 246, 246);
+
+}
+
+
+
+.links-rodape {
+
+    margin-top:15px;
+
+}
+
+
+
+.links-rodape a {
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:0 10px;
+
+}
+
+
+
+.links-rodape a:hover {
+
+    text-decoration:underline;
+
+}
+
+/* =========================
+   RESPONSIVIDADE
+   CELULAR
+========================= */
+
+
+@media (max-width: 768px){
+
+
+    body {
+
+        overflow-x:hidden;
+
+    }
+
+
+
+    h1 {
+
+        font-size:32px;
+
+    }
+
+
+
+    h2 {
+
+        font-size:26px;
+
+    }
+
+
+
+    /* Banner */
+
+    .banner {
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+
+    .banner img {
+
+        width:200px;
+
+    }
+
+
+
+
+    /* Cards de projetos */
+
+    .projetos-container {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    /* Habilidades */
+
+    .habilidades-container {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+
+    /* Contato */
+
+    .contato {
+
+        padding:40px 15px;
+
+    }
+
+
+
+    /* Rodapé */
+
+    .links-rodape {
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+
+}
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
+
+@media (max-width:480px){
+
+
+    h1 {
+
+        font-size:26px;
+
+    }
+
+
+
+    p {
+
+        font-size:15px;
+
+    }
+
+
+
+    button {
+
+        width:100%;
+
+    }
+
+
+
+}
+
