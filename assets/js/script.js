@@ -2,13 +2,6 @@
 
 const botao = document.querySelector("#tema");
 
-// Quando clicar
-
-botao.addEventListener("click", function(){
-
-    alert("Modo escuro será desenvolvido na próxima etapa.");
-
-});
 
 // Anima a seção Sobre ao aparecer na tela
 
@@ -31,4 +24,5 @@ const observer = new IntersectionObserver((entries) => {
 elementos.forEach((elemento) => {
     observer.observe(elemento);
 });
+
 
