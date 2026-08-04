@@ -1201,3 +1201,366 @@ nav a:hover{
 
     font-size:1.2rem;
 }
+
+/* =========================
+   MINI GAME
+========================= */
+
+.jogo{
+
+    padding:80px 10%;
+
+    text-align:center;
+}
+
+.jogo h2{
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+    color:var(--cor-primaria);
+}
+
+.descricao-jogo{
+
+    color:#666;
+
+    margin-bottom:40px;
+}
+
+/* Card */
+
+.jogo-card{
+
+    max-width:500px;
+
+    margin:0 auto;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+}
+
+/* Campo */
+
+#palpite{
+
+    width:100%;
+
+    padding:16px;
+
+    font-size:1rem;
+
+    border:2px solid #ddd;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+#palpite:focus{
+
+    border-color:var(--cor-primaria);
+
+    box-shadow:0 0 12px rgba(100,80,255,.25);
+}
+
+/* Botões */
+
+#btn-jogar,
+#btn-reiniciar{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+#btn-jogar{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg, var(--cor-primaria), #0d00ff);
+
+    color:#0f0f0f;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    margin-bottom:25px;
+
+    transition:all .3s ease;
+
+    box-shadow:0 8px 20px rgba(15, 3, 252, 0.35);
+
+}
+
+#btn-jogar:hover{
+
+    transform:translateY(-3px);
+
+    opacity:.9;
+}
+
+#btn-reiniciar{
+
+    margin-top:20px;
+
+    background:#222;
+
+    color:#fff;
+}
+
+#btn-reiniciar:hover{
+
+    transform:translateY(-3px);
+
+    background:#444;
+}
+
+/* Informações */
+
+.informacoes{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:25px 0;
+
+    font-weight:bold;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+}
+
+#mensagem{
+
+    margin-top:20px;
+
+    min-height:40px;
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    transition:all .4s ease;
+
+}
+
+/* Responsividade */
+
+@media(max-width:768px){
+
+    .jogo{
+
+        padding:60px 8%;
+    }
+
+    .jogo-card{
+
+        padding:25px;
+    }
+
+    .informacoes{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.animarMensagem{
+
+    animation:aparecer .4s ease;
+
+}
+
+/* =========================
+   ESTATÍSTICAS
+========================= */
+
+.estatisticas {
+
+    margin-top: 20px;
+    padding: 15px;
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+}
+
+
+/* =========================
+   MEDALHAS
+========================= */
+
+#medalha {
+
+    font-size: 40px;
+
+    margin-top: 15px;
+
+}
+
+
+/* =========================
+   CONFETES
+========================= */
+
+.confete {
+
+    position: fixed;
+
+    width: 10px;
+    height: 10px;
+
+    top: 0;
+
+    animation: cair 3s linear forwards;
+
+}
+
+
+@keyframes cair {
+
+
+    from {
+
+        transform:
+        translateY(0)
+        rotate(0deg);
+
+    }
+
+
+    to {
+
+        transform:
+        translateY(100vh)
+        rotate(360deg);
+
+    }
+
+}
+
+/* =========================
+   RESULTADO FINAL
+========================= */
+
+
+.resultado {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    animation: aparecer 0.8s ease;
+
+}
+
+
+
+.resultado h2 {
+
+    font-size: 35px;
+
+}
+
+
+
+#btnNovoJogo {
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+
+
+@keyframes aparecer {
+
+
+    from {
+
+        opacity:0;
+
+        transform:scale(0.5);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
